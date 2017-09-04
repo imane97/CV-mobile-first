@@ -3,9 +3,6 @@ h1, h2, h3, h4{
   color:#99710A;
   font-weight: bold;
 }
-h2{
-  text-decoration: overline;
-}
 header a, header button{
   text-decoration: none;
 }
@@ -19,6 +16,10 @@ footer a{
 }
 body{
   font-family: 'Alegreya Sans SC', sans-serif;
+}
+p{
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
 }
 #accueil{
   background-image: url(../images/accueil.jpg);
@@ -43,7 +44,8 @@ background-position:center;
   border: 2px;
   border-style: dashed;
   border-color: #99710A;
-   color:#99710A;
+  color:#99710A;
+ background-color: rgba(255, 255, 255, 0.60);
 }
 .competences-text{
   border: 2px;
@@ -52,15 +54,55 @@ background-position:center;
   color:#99710A;
 }
 
-
-/*@media only screen and (max-width:320px){
-
+figure{
+  overflow: hidden;
+  position:relative;
+  margin:0;
 }
 
-@media only screen and (min=768px){
-
+figure:hover .img-effect{
+  transform: scale(1.25);
+  transition: 1s;
+  opacity:0.1;
 }
 
-@media only screen and (min=768px){
+figure a{
+  display: block;
+  overflow: hidden;
+  background: black;
+}
 
-}*/
+figcaption{
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  color: white;
+  opacity: 0;
+  transition: 1s;
+  transform: translateX(50px) scale(2);
+}
+
+figure:hover figcaption{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@media only screen and (max-width:320px){
+.spacing{
+  display: flex;
+  justify-content: center;
+}
+}
+
+@media only screen and (min-width:768px){
+.spacing{
+display: inline-block;
+justify-content: space-between;
+
+}
+}
+
+@media only screen and (min-width:768px){
+
+}
