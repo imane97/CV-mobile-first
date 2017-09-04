@@ -1,0 +1,66 @@
+h1, h2, h3, h4{
+ font-family: 'Amatica SC', cursive;
+  color:#99710A;
+  font-weight: bold;
+}
+h2{
+  text-decoration: overline;
+}
+header a, header button{
+  text-decoration: none;
+}
+a, button{
+  color:#6A0C20;
+  text-decoration: underline;
+}
+footer a{
+  color:#6A0C20;
+  text-decoration: underline;
+}
+body{
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+#accueil{
+  background-image: url(../images/accueil.jpg);
+  background-size: cover;
+}
+#fond{
+  background-image: url(../images/competences.jpg);
+  background-size: cover;
+background-position:center;
+}
+#presentation{
+  background-image: url(../images/simplon-locaux.jpg);
+  background-size: cover;
+background-position:center;
+}
+
+.couleur{
+  color: #99710A;
+  font-weight: bold;
+}
+.presentation-text{
+  border: 2px;
+  border-style: dashed;
+  border-color: #99710A;
+   color:#99710A;
+}
+.competences-text{
+  border: 2px;
+  border-style: dashed;
+  border-color: #99710A;
+  color:#99710A;
+}
+
+
+/*@media only screen and (max-width:320px){
+
+}
+
+@media only screen and (min=768px){
+
+}
+
+@media only screen and (min=768px){
+
+}*/
