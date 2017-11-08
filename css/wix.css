@@ -1,61 +1,69 @@
-p, h2, h3,h4{
- /*font-family: 'Amatica SC', cursive;*/
+          /* FONT DE HAUT DE PAGE*/
+
+h2, h3,h4{
   color:#99710A;
   font-weight: bold;
 }
-#accueil, h1, h2{
+#accueil, h1,h2{
   font-weight: 1000;
   color: #841C07;
+  line-height: 10vh;
 }
-
+                   /*LIENS HREF*/
 header a, header button{
   text-decoration: none;
 }
 a, button{
   color:#841C07;
-  text-decoration: underline;
+
 }
+            /*FOOTER*/
 footer a{
   color:#841C07;
   text-decoration: underline;
 }
+                   /*FONT BODY*/
 body{
   font-family: 'Alegreya Sans SC', sans-serif;
 }
-/*p{
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-}*/
-#fond1{
-  background-image: url(../images/accueil.jpg);
-background-size: cover;
-position: sticky;
-}
-
-#fond2{
-  background-image: url(../images/competences.jpg);
-  background-size: cover;
-background-position: center;
-}
-.couleur{
-  color: #99710A;
+#formation p{
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
 }
-.couleur-1{
- background-color: rgba(255, 255, 255, 0.35);
+
+                /* FONDS DU SITE*/
+.fond-site{
+  position:fixed;
+  z-index: -1;
+height: 100%;
 }
+.fond-jaune{
+  background-color:rgba(153, 113, 10, 0.7);
+  padding-bottom:5%;
+}
+
+.fond-blanc{
+ background-color: rgba(255, 255, 255, 0.45);
+}
+.fond-blanc-fort{
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+              /*ENCADRÉS ET SOULIGNEMENENT*/
 .presentation-text{
-  border-bottom: 2px solid #99710A ;
-width: 50%;
+  border: 2px solid #99710A ;
+  width: 50%;
 
 }
-.competences-text{
-  border: 2px;
-  border-style: dashed;
-  border-color: #99710A;
-  color:#99710A;
+.sous-titres{
+  border: 2px solid #841C07 ;
+width: 25%;
+text-indent: inherit;
+color: #841C07;
+margin-top: 4vh;
 }
 
+            /*EFFET HOVER PORTFOLIO*/
 figure{
   overflow: hidden;
   position:relative;
@@ -63,37 +71,36 @@ figure{
 }
 
 figure:hover .img-effect{
-  transform: scale(1.25);
+  transform: scale(1.10);
   transition: 1s;
-  opacity:0.5;
+  opacity:0.2;
 }
 
 figure a{
   display: block;
   overflow: hidden;
-  background: linear-gradient(45deg, #FA5604, #841C07);;
+  /*background: linear-gradient(45deg, #FA5604, #841C07);*/
+  background: white;
 }
 
 figcaption{
-  position: relative;
-  /*bottom: 25px;
-  left: 25px;*/
-  color: blue;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  color: black;
   opacity: 0;
   transition: 1s;
-  transform: translateX(50px) scale(2);
+  transform: translateX(35px) scale(2);
 }
+
 
 figure:hover figcaption{
   opacity: 1;
   transform: translateY(0);
 }
 
-#sites0 img{
-  width: 100%;
-  height: auto;
-}
-#design img{
-  width: 100%;
+                /*REDIMENSIONEMENT CONASSE DE ILA*/
+.redimensioner{
+  width: 94%;
   height: auto;
 }
